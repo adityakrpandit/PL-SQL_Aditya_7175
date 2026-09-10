@@ -1,31 +1,34 @@
-# PL/SQL – Unit 1
+# PL/SQL – Unit 2
 
-This unit contains basic PL/SQL programs and practical exercises.
+This unit contains PL/SQL programs based on **Cursors, Exceptions and Database Operations**.
 
 ## Practicals Covered
 
-1. Calculate Simple Interest
-2. Calculate Square and Cube of a Number
-3. Calculate Product Discount
-4. Convert Feet into CM, Inch and Meter
-5. Convert Celsius to Fahrenheit
-6. Generate Numbers using LOOP, FOR LOOP and WHILE LOOP
-7. Calculate Total, Percentage and Grade of a Student
-8. Calculate Employee Gross Salary
-9. Display Male Employees from HR Department
-10. Delete an Employee Record using EID
+1. Update employee salary using `SQL%ROWCOUNT`
+2. Update salary using `%ISOPEN` and `%NOTFOUND`
+3. Display top 5 highest-paid employees using Explicit Cursor
+4. Display top 3 highest-paid employees using Cursor FOR Loop
+5. Department-wise salary using Parameterized Cursor
+6. Insert employee records using Cursor and User-Defined Exception
+7. Display Customer records using Explicit Cursor
+8. Display records using `LIKE` operator and Cursor FOR Loop
+9. Display records using `ORDER BY` with Cursor
+10. Update employee records using Implicit Cursor
 
 ## Topics Covered
 
-- PL/SQL Blocks
-- Variables and Data Types
-- User Input
-- Arithmetic Operations
-- Conditional Statements
-- LOOP, FOR LOOP & WHILE LOOP
-- Database Tables
-- SELECT and DELETE Operations
-- Employee and Student Data Processing
+- Implicit Cursor
+- Explicit Cursor
+- Cursor Attributes
+- Cursor FOR Loop
+- Parameterized Cursor
+- `%ROWCOUNT`
+- `%ISOPEN`
+- `%NOTFOUND`
+- User-Defined Exception
+- `LIKE` Operator
+- `ORDER BY` Clause
+- INSERT and UPDATE Operations
 
 ## Language
 
