@@ -1,4 +1,4 @@
--- Q4. Function to return the square of a given number
+-- Q4. Function that returns the square of a given number
 
 CREATE OR REPLACE FUNCTION SQUARE_NUMBER
 (
@@ -10,13 +10,11 @@ BEGIN
     RETURN P_NUM * P_NUM;
 END;
 /
-
+    
 DECLARE
     V_RESULT NUMBER;
 BEGIN
     V_RESULT := SQUARE_NUMBER(5);
-
     DBMS_OUTPUT.PUT_LINE('Square = ' || V_RESULT);
 END;
 /
-
