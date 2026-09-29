@@ -1,18 +1,10 @@
-CREATE OR REPLACE PROCEDURE INCREASE_SALARY
-(
-    P_DEPTNO  IN NUMBER,
-    P_PERCENT IN NUMBER
-)
+-- Q1. Procedure without any parameter
+-- Display a user-defined message
+
+CREATE OR REPLACE PROCEDURE SHOW_MESSAGE
 IS
 BEGIN
-    UPDATE U4EMP
-    SET BASICSAL = BASICSAL + (BASICSAL * P_PERCENT / 100)
-    WHERE DEPTNO = P_DEPTNO;
-
-    DBMS_OUTPUT.PUT_LINE(
-        SQL%ROWCOUNT || ' employee(s) salary updated.'
-    );
-
-    COMMIT;
+    DBMS_OUTPUT.PUT_LINE('Welcome to PL/SQL Programming');
 END;
 /
+
