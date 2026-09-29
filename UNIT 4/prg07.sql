@@ -1,26 +1,20 @@
--- Q7. Increase basic salary of employees
--- of a given department by a percentage
+-- Q7. Increase salary of employees of a given department
+-- by an amount using IN parameter
 
-CREATE OR REPLACE PROCEDURE UPDATE_DEPT_SALARY
+CREATE OR REPLACE PROCEDURE INCREASE_SALARY_AMOUNT
 (
-    P_DEPTNO  IN NUMBER,
-    P_PERCENT IN NUMBER
+    P_DEPTNO IN NUMBER,
+    P_AMOUNT IN NUMBER
 )
 IS
 BEGIN
     UPDATE U4EMP
-    SET BASICSAL = BASICSAL + (BASICSAL * P_PERCENT / 100)
+    SET BASICSAL = BASICSAL + P_AMOUNT
     WHERE DEPTNO = P_DEPTNO;
 
-    IF SQL%ROWCOUNT = 0 THEN
-        DBMS_OUTPUT.PUT_LINE(
-            'No employees found in department ' || P_DEPTNO
-        );
-    ELSE
-        DBMS_OUTPUT.PUT_LINE(
-            SQL%ROWCOUNT || ' employee(s) updated.'
-        );
-    END IF;
+    DBMS_OUTPUT.PUT_LINE(
+        SQL%ROWCOUNT || ' employee(s) salary updated.'
+    );
 
     COMMIT;
 END;
