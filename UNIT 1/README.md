@@ -76,7 +76,7 @@ PL-SQL_Aditya_7175/
 
 This folder is maintained for academic learning, practical implementation, revision, and preparation for the BCA Semester 3 PL/SQL laboratory examination.
 
-The practical topics are based on the Unit 2 section of the Marwadi University practical lab manual.
+The practical topics are based on the Unit 1 section of the Marwadi University practical lab manual.
 
 ## 👨‍💻 Author
 
